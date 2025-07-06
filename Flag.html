@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cari Flag dengan Logika</title>
+    <style>
+        @import url('css.css');
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Tantangan Logika untuk Menemukan Flag</h1>
+        
+        <div class="challenge 32">
+            <p>Selamat datang di tantangan ini! Untuk menemukan flag, Anda harus menyelesaikan serangkaian perhitungan logika.</p>
+            <p>Flag akan muncul sebagai link setelah Anda berhasil menyelesaikan tantangan.</p>
+            
+            <div id="question1">
+                <h3>Tantangan 1: Deret Angka</h3>
+                <p>Berapa angka berikutnya dalam deret ini: 2, 4, 8, 16, ...?</p>
+                <input type="number" id="answer1" placeholder="Masukkan jawaban Anda">
+                <button onclick="checkAnswer1()">Periksa Jawaban</button>
+            </div>
+            
+            <div id="question2" class="hidden">
+                <h3>Tantangan 2: Operasi Matematika</h3>
+                <p>Hitunglah: (5 × 3) + (10 ÷ 2) - 4 = ?</p>
+                <input type="number" id="answer2" placeholder="Masukkan jawaban Anda">
+                <button onclick="checkAnswer2()">Periksa Jawaban</button>
+            </div>
+            
+            <div id="question3" class="hidden">
+                <h3>Tantangan 3: Logika XOR</h3>
+                <p>Jika A = 1 dan B = 0, berapa hasil dari A XOR B XOR A?</p>
+                <input type="number" id="answer3" placeholder="Masukkan jawaban Anda (0 atau 1)">
+                <button onclick="checkAnswer3()">Periksa Jawaban</button>
+            </div>
+        </div>
+        
+        <div id="result">
+            <h3>Selamat! Anda berhasil menyelesaikan semua tantangan!</h3>
+            <p>Flag Anda adalah: <a id="flagLink" href="#" target="_blank">Klik di sini untuk melihat flag</a></p>
+            <p>Atau salin teks ini: <span id="flagText"></span></p>
+        </div>
+    </div>
+
+    <script src = "script.js"></script>
+</body>
+</html>
